@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="https://www.iconpacks.net/icons/1/free-heart-icon-431-thumb.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>ส่งจีบเธอ</title>
+  </head>
+  <body>
+    <!-- หน้าแรก -->
+    <div id="mainPage" class="container">
+      <span class="title">ที่รักดีกันม้ายยย?</span>
+      <img id="mainImage" src="0a027935-a19c-4aba-95bd-fc7d7a47a44c.jpg" alt="Do you?" />
+
+      <!-- ปุ่มกด -->
+      <div class="button-container">
+        <button
+          id="noButton"
+          class="button"
+          onmouseover="changeImage('Folk11.jpg')"
+          onmouseout="resetImage()"
+          onclick="handleNoClick()"
+        >
+          ไม่
+        </button>
+        <button
+          id="loveButton"
+          class="button"
+          onmouseover="changeImage('ddd.jpg')"
+          onmouseout="resetImage()"
+          onclick="showPage('lovePage')"
+        >
+          ดีก็ได้ รักนะ
+        </button>
+      </div>
+    </div>
+
+    <!-- หน้ากด รักกกก -->
+    <div id="lovePage" class="container hidden">
+      <h1>เค้ารักเธอที่สุดเลยนะสิริน จุ๊ฟฟฟ</h1>
+      <img src="duo.jpg" alt="Love You" />
+    </div>
+
+    <!-- หน้าถ้ายังจะกด No เรื่อยๆ  -->
+    <div id="noPage" class="container hidden">
+      <img src="Wan.jpg" alt="ควยยยย!!!" />
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
